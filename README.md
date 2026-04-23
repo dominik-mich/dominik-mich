@@ -2,17 +2,17 @@
 
 I build verification systems that make complex hardware/software **provable**, **repeatable**, and **shippable**.
 
-SWE with a strong testing background in **networking** (switching, APIs, drivers), now running **design verification** for an **audio engine**. I like clean automation, trustworthy signals, and pipelines that tell the truth.
+SWE with a strong testing background in **networking** (switching, APIs, drivers), now running **design verification** for an **audio engine**. I like clean automation, trustworthy signals, and CI pipelines that tell the truth.
 
 ---
 
 ## What I’m into (lately)
 
-- **Design Verification**: building environments that catch real bugs early
+- **Design Verification**: environments that catch real bugs early
 - **Networking**: switching, driver/API validation, system-level debugging
 - **Automation & DX**: reducing “manual verification” to a button (or a PR)
-- **Pragmatic AI**: Copilot where it speeds up *the boring parts* without hiding the important ones
 - **CI that matters**: fast feedback, reproducible runs, actionable logs
+- **Pragmatic AI in engineering workflows**: using AI to remove friction (without losing rigor)
 
 ---
 
@@ -38,21 +38,47 @@ SWE with a strong testing background in **networking** (switching, APIs, drivers
 
 **Verification / DV**
 - **SystemVerilog**, **UVM**
-- Assertion-based verification mindset (properties, coverage, scoreboards)
+- coverage, scoreboards, assertions, debug-first testbenches
 
 **Scripting / Frameworks**
 - **Python** (test orchestration, automation, tooling, data wrangling)
 
 **Systems**
-- **Linux** (daily driver for dev + bring-up style debugging)
-- Hardware/software boundary work: APIs, drivers, integration points
+- **Linux** (daily driver)
+- APIs, drivers, integration debugging across the HW/SW boundary
 
 **Core languages (from networking & systems work)**
 - **C**, **C++**, **Python**
 
 **CI / Productivity**
-- **GitHub Actions** (workflows, matrices, artifacts, reusable actions)
-- **GitHub Copilot** (accelerating scaffolding, refactors, and test generation)
+- **GitHub Actions** (matrices, artifacts, reusable workflows)
+- **GitHub Copilot** (scaffolding, refactors, test generation)
+
+---
+
+## Early adopter: AI tools (learning to use them *well*)
+
+I’m an early adopter of AI tools like **GitHub Copilot**, **Claude**, and **GPT**—and I’m actively figuring out how to apply them more effectively in **design verification**, **triage**, **debugging**, and **code changes**.
+
+What I want to get better at:
+
+- **Triage acceleration**
+  - summarizing failing CI runs and extracting the *first actionable clue*
+  - clustering failures by signature (log patterns, assertion IDs, seeds, regressions)
+
+- **Debugging support**
+  - turning long logs/waveform notes into hypotheses to test
+  - generating “next-step” debug checklists (what signals, what knobs, what seeds)
+
+- **DV productivity**
+  - drafting UVM components (monitors, sequences, scoreboards) from a clear spec
+  - writing assertions/properties and coverage plans with fewer omissions
+
+- **Safer code changes**
+  - proposing minimal diffs + tests, not big rewrites
+  - explaining tradeoffs and failure modes before code lands
+
+My rule: **AI should improve throughput and clarity, but the verification story must remain deterministic and auditable.**
 
 ---
 
